@@ -20,13 +20,13 @@ for file in list_fileName:
     # Look for size
     size = os.path.getsize(file)
 #     Print result
-print(file, size, bytes)
+    print(file, size, bytes)
 
 # TODO: Add a test to only display files that are not zero length - this task is doing what the above task should do
 for file in list_fileName:
  # condition for file lengths greater than 0
- if size > 0:
-     print(file, size, 'bytes')
+    if size > 0:
+        print(file, size, 'bytes')
 
 # TODO: Remove the leading directory name(s) from each filename before you print it -
 for file in list_fileName:
