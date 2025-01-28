@@ -27,3 +27,10 @@ for file in list_fileName:
  # condition for file lengths greater than 0
  if size > 0:
      print(file, size, 'bytes')
+
+# TODO: Remove the leading directory name(s) from each filename before you print it -
+for file in list_fileName:
+    if os.path.getsize(file) != 0:
+        # files_noneZero = os.path.getsize(file)
+        # remoVar = os.path.basename(file)
+        print(f"File: {os.path.basename(file)}, Size: {os.path.getsize(file)} bytes")
