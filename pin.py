@@ -1,5 +1,5 @@
 import getpass
-
+# victoria was here
 
 original_pin = 1234
 # supplied_pin = input("Enter your PIN: ")
@@ -8,8 +8,9 @@ count = 0
 
 while count < attempts:
     supplied_pin = getpass.getpass(prompt="Enter your PIN: ")
-    if original_pin == supplied_pin:
+    if original_pin == int(supplied_pin):
         print("Its the right pin")
+        break
     else:
         count += 1
         if attempts - count == 0:
